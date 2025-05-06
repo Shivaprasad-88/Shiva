@@ -1,0 +1,57 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="claim.css">
+</head>
+<body>
+
+  <form action="index.html" method="post">
+  
+    <h1>REGISTER</h1>
+    
+    <fieldset>
+      <legend><span class="number">1</span>Your basic info</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name">
+      
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="user_email">
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="user_password">
+      
+      <label>GENDER:</label>
+      <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">MALE</label><br>
+      <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">FEMALE</label>
+    </fieldset>
+    
+    <fieldset>
+      <legend><span class="number">2</span>Personal Info</legend>
+      <label for="bio">Personal Description:</label>
+      <textarea id="bio" name="user_bio"></textarea>
+    </fieldset>
+    <fieldset>
+    <label for="job">GUIDE PLAN:</label>
+    <select id="job" name="user_job">
+      
+        <option value="frontend_developer">TOUR BUS</option>
+        <option value="php_developor">ON FOOT</option>
+        <option value="python_developer">WITH A CAR</option>
+        
+        
+      </optgroup>
+     
+    </select>
+    
+      <label>Subscribe To REQUESTS</label>
+      <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">RECIEVE REQUESTS</label><br>
+        <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">SUGGESTIONS</label><br>
+    </fieldset>
+    <button type="submit">REGISTER</button>
+  </form>
+  
+</body>
+</html>
